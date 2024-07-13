@@ -1,0 +1,210 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Calibri;}{\f1\fnil Calibri;}}
+{\*\generator Riched20 10.0.18362}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\f0\fs56\lang9\tab Questions &Answers\par
+\b\fs40 1.what is the encapsulation\par
+\b0\fs32 By definition, encapsulation describes the idea of bundling data and methods that work on that data within one unit, like a class in Java. This concept is also often used to hide the internal representation, or state of an object from the outside. This is called information hiding.\par
+\b\fs40 2 what are the access modifiers?\par
+\b0\fs32 Default \f1\endash  No keyword required\par
+Private\par
+Protected\par
+Public\par
+\b Default\b0\fs22 : \fs32 When no access modifier is specified for a class, method, or data member \endash  It is said to be having the default access modifier by default. \par
+The data members, class or methods which are not declared using any access modifiers i.e. having default access modifier are accessible only within the same packag\f0\lang1033 e\par
+\b Private\b0 : The private access modifier is specified using the keyword private. \par
+The methods or data members declared as private are accessible only within the class in which they are declared.\par
+Any other class of the same package will not be able to access these members.\par
+Top-level classes or interfaces can not be declared as private because\par
+private means \ldblquote only visible within the enclosing class\rdblquote .\par
+protected means \ldblquote only visible within the enclosing class and any subclasses\rdblquote\par
+\b protected: \b0 The protected access modifier is specified using the keyword protected.\par
+The methods or data members declared as protected are accessible within the same package or subclasses in different packages.\par
+\b public\b0 : The public access modifier is specified using the keyword public. \par
+The public access modifier has the widest scope among all other access modifiers.\par
+Classes, methods, or data members that are declared as public are accessible from everywhere in the program. There is no restriction on the scope of public data members.\par
+\b\fs40 3. What is Inheritance?\par
+\b0\fs32 Inheritance is a mechanism in which one class acquires the property of another class. For\par
+example, a child inherits the traits of his/her parents. With inheritance, we can reuse the\par
+fields and methods of the existing class. Hence, inheritance facilitates Reusability and is an\par
+important concept of OOPs.\par
+\b\fs40 4. What are get and set properties? \par
+\b0\fs32 The get method returns the value of the variable name. The set method assigns a value to the name variable. The value keyword represents the value we assign to the property. \par
+\b\fs40 5. What is Overloading? \par
+\b0\fs32 Overloading happens when you have two methods with the same name but different signatures (or arguments). In a class we can implement two or more methods with the same name. Overloaded methods are differentiated based on the number and type of parameter passed as arguments to the methods. \par
+ \par
+\b\fs40 6. What is Overriding?  \par
+\b0\fs32 If derived class defines same method as defined in its base class, it is known as method overriding in C#. It is used to achieve runtime polymorphism. It enables you to provide specific implementation of the method which is already provided by its base class. \par
+To perform method overriding in C#, you need to use virtual keyword with base class method and override keyword with derived class method. \par
+ \par
+\b\fs40 7. What are Extension Methods? \par
+\b0\fs32 Extension methods enable you to "add" methods to existing types without creating a new derived type, recompiling, or otherwise modifying the original type. Extension methods are static methods, but they're called as if they were instance methods on the extended type. \par
+ \par
+\b 8\fs40 . What are New Features of C# 8.0? \par
+\b0\f1\fs32\bullet  Record structs \par
+\bullet  Improvements of structure types \par
+\bullet  Interpolated string handlers \par
+\bullet  global using directives \par
+\bullet  File-scoped namespace declaration \par
+\bullet  Extended property patterns \par
+\bullet  Improvements on lambda expressions \par
+\bullet  Allow const interpolated strings \par
+\bullet  Record types can seal ToString() \par
+\bullet  Improved definite assignment \par
+\bullet  Allow both assignment and declaration in the same deconstruction \par
+\bullet  Allow AsyncMethodBuilder attribute on methods \par
+\bullet  CallerArgumentExpression attribute \par
+\bullet  Enhanced #line pragma \par
+\b\f0 9\f1 . what is request pipeline in .net core? \par
+\b0 The Request Pipeline is the mechanism by which requests are processed beginning with a Request and ending with a Response. \par
+The pipeline specifies how the application should respond to the HTTP request. The Request arriving from the browser goes through the pipeline and back \par
+The individual components that make up the pipeline are called Middleware. \par
+\b\f0 10\f1 . What is Configure services and configure method? \par
+\b0 The Configure method is used to specify how the app responds to HTTP requests. The request pipeline is configured by adding middleware components to an IApplicationBuilder instance. IApplicationBuilder is available to the Configure method, but it isn't registered in the service container. \par
+The ConfigureServices method is a place where you can register your dependent classes with the built-in IoC container. After registering dependent class, it can be used anywhere in the application. You just need to include it in the parameter of the constructor of a class where you want to use it. \par
+\b\f0 11\f1 .What is Web CLI? Why is it used in Dotnet Core? \par
+\b0 The .NET command-line interface (CLI) is a cross-platform toolchain for developing, building, running, and publishing .NET applications. \par
+CLI commands: \par
+Basic commands \par
+\bullet  new \par
+\bullet  restore \par
+\bullet  build \par
+\bullet  publish \par
+\bullet  run \par
+\bullet  test \par
+\bullet  vstest \par
+\bullet  pack \par
+\bullet  migrate \par
+\bullet  clean \par
+\bullet  sln \par
+\bullet  help \par
+\bullet  store \par
+Project modification commands \par
+\bullet  add package \par
+\bullet  add reference \par
+\bullet  remove package \par
+\bullet  remove reference \par
+\bullet  list reference \par
+Advanced commands \par
+\bullet  nuget delete \par
+\bullet  nuget locals \par
+\bullet  nuget push \par
+\bullet  msbuild \par
+\bullet  dotnet install script \par
+Tool management commands \par
+\bullet  tool install \par
+\bullet  tool list \par
+\bullet  tool update \par
+\bullet  tool restore Available since .NET Core SDK 3.0. \par
+\bullet  tool run Available since .NET Core SDK 3.0. \par
+\bullet  tool uninstall \par
+ \par
+\b\f0\fs36 12\f1 . What is Dotnet Core? \par
+\b0\fs32 .NET Core is a new version of .NET Framework, .NET Core is a general-purpose software development framework, it easily allows developers to build a plethora of software including Web, Desktop, Mobile, Cloud, Gaming, IoT, etc. The applications built with .NET Core are supported on Windows, Linux, and macOS. \par
+ \par
+ \par
+ \par
+ \par
+\b\f0\fs36 13\f1 .WHAT IS EF DOTNET CORE EF? \b0\fs32\par
+Entity Framework (EF) Core is a lightweight, extensible, open source and cross-platform version of the popular Entity Framework data access technology. EF Core can serve as an object-relational mapper (O/RM), which: Enables . NET developers to work with a database using . \par
+ \par
+\b\f0\fs36 14\f1 .WHAT IS SWAGGER AND WHY IT IS USED? \b0\fs32\par
+Swagger allows you to describe the structure of your APIs so that machines can read them. \par
+Swagger provides a set of great tools for designing APIs and improving the work with web services: \par
+ \par
+\b\f0\fs40 1\fs32 5\f1 .WHAT IS MIDDLEWARE IN DOTNET CORE? \par
+\b0 Middleware are software components that are assembled into an application pipeline to handle requests and responses. Each component chooses whether to pass the request on to the next component in the pipeline, and can perform certain actions before and after the next component is invoked in the pipeline\par
+\par
+ \par
+\b\f0 16\f1 . How do We manage Session  in Dotnet Core Application? \par
+\b0 Session state is an ASP.NET Core scenario for storage of user data while the user browses a web app. Session state uses a store maintained by the app to persist data across requests from a client. \par
+1. Launch the Visual Studio 2017 IDE. \par
+2. Click on File > New > Project. \par
+3. Select \ldblquote ASP.Net Core Web Application (.Net Core)\rdblquote  from the list of templates displayed. \par
+4. Specify a name for the project. \par
+5. Click OK to save the project. \par
+6. Select \ldblquote API\rdblquote  in the \ldblquote New .Net Core Web Application\'85\rdblquote  window. \par
+7. Select \ldblquote .Net Core\rdblquote  as the runtime and ASP.Net Core 2.1 (or later) from the dropdown list of controls at the top. \par
+8. Select \ldblquote Web Application (Model-View-Controller)\rdblquote  as the project template. \par
+9. Uncheck the \ldblquote Enable Docker Support\rdblquote  box. \par
+10. Ensure that \ldblquote No Authentication\rdblquote  is selected as we won\rquote t be using authentication here. \par
+11. Ensure that \ldblquote Configure for HTTPS\rdblquote  is unchecked as we won\rquote t need HTTPS either. (See the figure below.) \par
+12. Click OK.\par
+\b\f0 17\f1 . What is App Life Cycle of Dotnet Core Application? \b0\par
+The ASP.NET Core MVC Request Life Cycle is a sequence of events, stages or components that interact with each other to process an HTTP request and generate a response that goes back to the client. \par
+When an ASP.NET page executes, it undergoes a life cycle that includes various stages. The important stages in the page life cycle are Initialization, Load, Control Events, Rendering and Unload.\par
+\b\f0 18\f1 . What are different Configuration Sources we have in Dotnet core? \par
+\b0 Configuration in ASP.NET Core is performed using one or more configuration providers. Configuration providers read configuration data from key-value pairs using a variety of configuration sources: Settings files, such as appsettings\par
+\b\f0 19\f1 . What are Return type in API Actions? \par
+\b0 A Web API controller action can return any of the following: void. HttpResponseMessage. IHttpActionResult. \par
+There are 7 types of content returning results: \par
+\bullet  ViewResult. \par
+\bullet  PartialViewResult. \par
+\bullet  ContentResult. \par
+\bullet  EmptyResult. \par
+\bullet  FileResult. \par
+\bullet  JsonResult. \par
+\bullet  JavaScriptResult. \par
+ \par
+\b 2\f0 0\f1 .What are CORS? \par
+\b0 Cross-Origin Resource Sharing \par
+Cross-Origin Resource Sharing (CORS) is an HTTP-header based mechanism that allows a server to indicate any origins (domain, scheme, or port) other than its own from which a browser should permit loading resources \par
+ \par
+\b 2\f0 1\f1 .What is ORM? \par
+\b0 Object-relational mapping (ORM) is a programming technique in which a metadata descriptor is used to connect object code to a relational database.\par
+\b 22.What are COOKIES? \par
+\b0 A cookie is a piece of data typically used to store information about the user and is stored on the user's computer. \par
+ \par
+\b 23.What is an ENDPOINT? \par
+\b0 a point marking the completion of a process or stage of a process especially. \par
+ \par
+\b 24.What are REST ENDPOINTS? \par
+\b0 A REST Service Endpoint is an endpoint which services a set of REST resources. The URI for REST Service Endpoints entities. \par
+ \par
+\b 25.What are HTTP HEADERS? \par
+\b0 An HTTP header is a field of an HTTP request or response that passes additional context and metadata about the request or response. For example, a request message can use headers to indicate it's preferred media formats, while a response can use header to indicate the media format of the returned body\par
+\b\f0 26\f1 .What is CACHING? \par
+\b0 Caching is a technique that stores a copy of a given resource and serves it back when requested. When a web cache has a requested resource in its store, it intercepts the request and returns a copy of the stored resource instead of redownloading the resource from the originating server. \par
+\b 2\f0 7\f1 .What is CROSS PLATFORM? \par
+\b0 In computing, cross-platform software (also called multi-platform software, platformagnostic software, or platform-independent software) is computer software that is designed to work in several computing platforms. \par
+\b\f0 28\f1 .What are TAG HELPERS? \par
+\b0 Tag helpers are reusable components for automating the generation of HTML in Razor Pages. Tag helpers target specific HTML tags. The ASP.NET Core framework includes a number of predefined tag helpers targeting many commonly used HTML elements as well as some custom tags: Anchor tag helper. Cache tag helper\par
+\par
+ \par
+\b\f0 29\f1 .WHAT IS DI? WHAT IS IOC? \par
+\b0 Inversion of Control(IoC) is also known as Dependency injection (DI). \par
+IoC - Inversion of control is generic term, independent of language, it is actually not create the objects but describe in which fashion object is being created.  \par
+ \par
+DI - Dependency Injection is concrete term, in which we provide dependencies of the object at run time by using different injection techniques \par
+ \par
+\b\f0 30\f1 .What is HOSTING MODEL? \b0\par
+The three types of web hosting models to consider are shared hosting, virtual private servers, and dedicated physical servers \par
+ \par
+\b\f0 3\f1 1.CONFIGURESERVICES METHOD IN STARTUP CS? \par
+\b0 The ConfigureServices method is a place where you can register your dependent classes with the built-in IoC container. After registering dependent class, it can be used anywhere in the application. You just need to include it in the parameter of the constructor of a class where you want to use it. \par
+\b\f0 32\f1 .What is ROUTING? \par
+\b0 Routing is the process of selecting a path for traffic in a network or between or across multiple networks \par
+ \par
+\b\f0 33\f1 .What is KESTREL SERVER? \par
+\b0 Kestrel is an open source, cross platform, light weight and a default webserver used for Asp.Net Core applications. Asp.Net Core applications run Kestrel webserver as in-process server to handle web request. Kestrel webserver is based on async I/O library called libuv primarily developed for Node. js.\par
+\b\f0 34.\f1  what is arrayList in c#? \par
+\b0  In C#, the ArrayList is a non-generic collection of objects whose size increases dynamically. It is the same as Array except that its size increases dynamically. An ArrayList can be used to add unknown data where you don't know the types and the size of the data. \par
+ \par
+ \par
+\b\f0 35\f1 . What is List<T>? \par
+\b0 The List<T> is a collection of strongly typed objects that can be accessed by index and having methods for sorting, searching, and modifying list. It is the generic version of the ArrayList that comes under System. \par
+\b\f0 36\f1 .What is an Abstract Class? \par
+\b0 An abstract class is an incomplete class or special class we can't be instantiated. The purpose of an abstract class is to provide a blueprint for derived classes and set some rules what the derived classes must implement when they inherit an abstract class. \par
+ \par
+\b\f0 37\f1 . What is Interface? \par
+\b0 Interface in C# is a blueprint of a class. It is like abstract class because all the methods which are declared inside the interface are abstract methods. It cannot have method body and cannot be instantiated. It is used to achieve multiple inheritance which can't be achieved by class. \par
+ \par
+\par
+ \par
+\par
+ \par
+ \f0\par
+\par
+\par
+\par
+\lang9\par
+}
+ 
