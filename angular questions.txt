@@ -1,0 +1,287 @@
+Angular 8
+
+What is Angular 8?
+
+This version released in May 28, 2019, is a JavaScript framework for building apps in HTML, JavaScript, and TypeScript. In general, Angular 8 supports new and unique features such as CLI (Command Line Interface), core framework and angular material library.
+
+Latest Version
+
+Angular 9.0. released on November 2019
+
+Created By
+
+Google
+
+Written in
+
+TypeScript
+
+Best Angular 8 Interview Questions And Answers
+
+1. What are the new features in angular 8?
+
+Angular 8 it has following new features such as
+
+·        Differential loading- It is a technique that automatically makes your angular applications more performant. When you build applications for production, two bundles are created- One bundle for Modern browsers that support ES6+ and another bundle for older browsers that only support ESS.
+
+·        Dynamic imports for lazy routes- In Angular version 8 there is nothing new in the concept of lazy routes itself but the syntax has totally changed. In the older version of Angular CustomString Syntax is used, but angular 8 uses standard dynamic import syntax so the syntax which is customized to Angular is migrated to industrial standard.
+
+·        Ivy rendering Engine- It translates the templates and components into regular HTML and javascript that the browser can interpret and understand.
+
+·        Bazel- It is a building tool through which angular developer can build backends and frontends.
+
+ 28  4
+
+2. What is bazel in angular 8?
+
+In Angular 8, Bazel is a new build system and it is available for a short period of time. It is the new feature of Angular 8, which provides a platform to make your backends and frontends with a similar tool. It has the possibility to have remote builds as well as cache on the build farm.
+
+3. What is the purpose of Wildcard route?
+
+Wildcard routing is used in Angular 8 for defining the route of pages. Specific changes/updates can be made when defining the route using Wildcard.
+
+ 20  10
+
+4. What is the difference between promise and observable in angular8?
+
+Observables
+
+Promises
+
+Both synchronous as well as asynchronous
+
+Always asynchronous
+
+Can emit multiple values
+
+Provides only one single value
+
+It is lazy
+
+It is eager
+
+5. What is authentication and authorization in Angular?
+
+Authentication
+
+Authorization
+
+Process of verifying the user
+
+Process of verifying that you have relevant access to any procedure
+
+Methods: Login form, HTTP Authentication, HTTP digest, X 509 Certificates, and Custom Authentication method.
+
+Methods: Access controls for URL, secure objects and methods and Access Control Lists (ACL)
+
+ 
+
+ 
+
+  0 Answer
+
+6. Why typescript is used in angular 8?
+
+Angular uses TypeScript because:
+
+·        It has a wide range of tools
+
+·        It’s a superset of Angular
+
+·        It makes abstractions explicit
+
+·        It makes the code easier to read and understand.
+
+·        It takes most of the usefulness within a language and brings it into a JS environment without forcing you out.
+
+7. What is the difference between Angular 7 and Angular 8?
+
+Angular 7
+
+Angular 8
+
+Angular 7 is difficult to use
+
+Angular 8 is easier to use
+
+It has features such as Virtual scrolling, CLI prompts, Application performance, Drag, and drop, Bundle budget, Angular compiler, Angular elements, NativeScript, Better error handling, etc.
+
+It has unique and advanced level features such as Differential Loading, Ivy rendering Engine, API builders, Bazel support, Support for $location, Router backward compatibility, Opt-In Usage sharing, web- workers, etc.
+
+Breaking changing in Angular 7 are- Component Dev Kit (CKD), Material design library and virtual scrolling.
+
+Breaking changing in Angular 8 are- Core framework, Angular, material library and CLI.
+
+It will support a lower version of typescript version 3.4.
+
+It will not support a lower version of typescript version 3.4.
+
+It supports all types Node.js version
+
+It supports Node.js version 12 or later
+
+8. What is the purpose of Codelyzer?
+
+Codelyzer is an open-source tool in Angular 8 whose main function is to check for errors in codes not following pre-defined guidelines. It runs on the tslint.json file and checks only the static code in Angular 8.
+
+9. What are the limitations of Web Workers?
+
+Here are the limitations of a Web Worker:
+
+·        A web worker cannot directly manipulate the DOM
+
+·        It has limited access to methods and properties of the window object.
+
+·        It cannot be run directly from the file system. A web worker needs a server to run.
+
+10. How Performance Improvements on the core in Angular 8?
+
+Angular 8 has advanced level features which ensure systematic workflow and performance improvements. It has apparent features such as differential loading, CLI workflow improvements, Dynamic imports for lazy routes, Ivy rendering engine, Bazel, etc.
+
+A Service Worker is used in Angular 8 to build the basic steps of converting an application into a Progressive Web App (PWA). Service workers function as network proxies and intercepting all outgoing HTTP requests made by the application and how to respond.
+
+12. What Are the features of Bazel?
+
+The main features of Bazel are-
+
+·        It is an internal build tool, through which application can be customized.
+
+·        It also tests the action and performance of multiple machines.
+
+·        It constructs a graph through which you can identify the useful information.
+
+·        It also supports customization.
+
+13. How to upgrade angular 7 to 8?
+
+Steps to upgrade Angular 7 to 8
+
+·        Install TypeScript 3.4
+
+·        Use Node LTS 10.16 or its advanced version
+
+·        Run command on terminal panel/CLI -> ng update @angular/cli@angular/core
+
+Alternative- use URL link- https://update.angular.io/
+
+14. How can you hide an HTML element just by a button click in Angular?
+
+Ng-hide command is used to hide HTML elements if an expression is true.
+
+Here's an example:
+
+<div ng-app="DemoApp" ng-controller="DemoController">
+   <input type="button" value="Hide Angular" ng-click="ShowHide()"/>
+   <div ng-hide="IsVisible">Angular 8</div>
+</div>
+<script type="text/javascript">
+   var app = angular.module('DemoApp',[]);
+   app.controller('DemoController',function($scope){
+   $scope.IsVisible = false;
+   $scope.ShowHide = function(){
+     $scope.IsVisible = $scope.IsVisible = true;
+   }
+});
+</script>
+
+ 
+
+Now in the above, when the Hide Angular button is not clicked(the expression is set to false)
+
+2
+
+15. What are new features in Angular 9?
+
+Here are the top new features of Angular 9
+
+·        An undecorated class migration schematic added to the core.
+
+·        Numeric Values are accepted in the formControlName.
+
+·        Selector-less directives have now been allowed as base classes in View Engine in the compiler.
+
+·        Conversion of ngtsc diagnostics to ts.Diagnostics is possible
+
+16. What is the use of RxJS in angular8?
+
+Angular 8 uses observables which are implemented using RxJS libraries to push code. The main job of RxJS is to work with asynchronous events.
+
+ 4  1
+
+17. What is NgUpgrade?
+
+NgUpgrade in Angular 8 is a library which is used to integrate both Angular and AngularJS components in an application and also help in bridging the dependency injection systems in both Angular & AngularJS.
+
+3
+
+18. Which command is used to run static code analysis of angular application?
+
+The ng lint command is used to run static code analysis within an Angular application.
+
+19. What is HostListener and HostBinding?
+
+8  0
+
+20. How to install Angular 8?
+
+Steps for the Installation of Angular 8 environmental setup
+
+Step 1
+
+Before installing Angular IDE using Angular CLI tool, make sure that Node.js has already installed in your system.
+
+·        1. If Node.js is not installed in your system install it using the following steps.
+
+o   The basic requirement of Angular 8 is Node.js version 110.9.0 or later.
+
+o   Download it using https//nodejs.org/en/
+
+o   Install it on your system
+
+o   Open node.js command prompt
+
+o   Check the version run command, node-v in the console window
+
+Step 2
+
+In order to install Angular CLI, use the following commands 2) npm install –g @angular/cli or npm install –g @angular/cli@latest
+
+Step 3
+
+To check the node and angular CLI version, run command ng –version on the console terminal
+
+21. What is runGuardsAndResolvers in Angular 8?
+
+Angular 8 introduced a number of new and unique options to runGuardsAndResolvers. In general, runGuardsAndResolvers is an option which is used for the Angular router configuration in order to control the resolvers and guards. The first option available in runGuardsAndResolvers is pathParamsChange. Through, this option router will re-run the guards and resolvers. Whenever you want to control over the resolvers and guards, use runGuardsAndResolvers option in Angular 8.
+
+22. Why Incremental DOM is Tree Shakable?
+
+In Angular 8, the framework does not interpret components in an incremental DOM. It uses component references instructions, and if it does not refer to a particular instruction, it shall be left unused. Now, VIrtual DOM requires an external interpreter. Hence, not knowing which components to display, everything is shifted to the browser, making the DOM shakeable.
+
+23. What is the difference between real Dom and virtual Dom?
+
+Real DOM
+
+Virtual DOM
+
+DOM is a language-neutral interface allowing programs and scripts to dynamically access and update multiple objects like content, structure, and style of a document.
+
+Is a collection of modules designed to provide a declarative way to represent the DOM for an application.
+
+The DOM represents the document as nodes and objects.
+
+A virtual DOM object is a representation of a DOM object, like a lightweight copy.
+
+It is an object-oriented representation of a web page, modified with a scripting language like JavaScript.
+
+Virtual DOM is ideal for mobile-first applications.
+
+0
+
+24. What is typeofchecks in Angular 8?
+
+The working of typesofchecks in Angular 8 is similar with the enabled and disabled flag, which means if you want to test whether the selected value is an object or not, then the following syntax is used " Typeof value = = = 'object' ". In angular 8 the folwing types of checks are used such as “Typeof value.ngOnDestroy = = = 'function' “.
+
+25. How to rollback the whole object when navigating back to a page managed by Angular Router in Angular 8?
+
+The angular router in Angular 8 enables rollback the whole object to the next as users perform application work. To present a specific component view a given URL, Angular Router is the foremost service that presents. In order to import an Angular router, it is mandatory to install a library package, @angular/router
